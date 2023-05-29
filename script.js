@@ -62,7 +62,7 @@ Promise.all(promises)
 
    const totalTimeCell = document.createElement("td");
    totalTimeCell.innerText = (totalTime / 1000).toFixed(3);
-   totalRow.appendChild(totalTimeCell   
+   totalRow.appendChild(totalTimeCell);   
    outputElement.appendChild(totalRow);
  })
 .catch((error) => {
