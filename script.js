@@ -12,33 +12,33 @@ function addPromiseStatus(name, start, end) {
 }
 
 let start1 = new Date().getTime(); // milliseconds from 1970 Jan 1
-let promise1 = new Promise((resolve) => {
+let Promise 1 = new Promise((resolve) => {
 	setTimeout(() => {
 		resolve();
 		let end1 = new Date().getTime(); // milliseconds from 1970 Jan 1 
-		addPromiseStatus("Promise1", start1, end1)
+		addPromiseStatus("Promise 1", start1, end1)
 	}, 2000)
 })
 
 let start2 = new Date().getTime();
-let promise2 = new Promise((resolve) => {
+let Promise 2 = new Promise((resolve) => {
 	setTimeout(() => {
 		resolve();
 		let end2 = new Date().getTime();
-		addPromiseStatus("Promise2", start2, end2);
+		addPromiseStatus("Promise 2", start2, end2);
 	}, 1000)
 })
 
 let start3 = new Date().getTime();
-let promise3 = new Promise((resolve) => {
+let Promise 3 = new Promise((resolve) => {
 	setTimeout(() => {
 		resolve();
 		let end3 = new Date().getTime();
-		addPromiseStatus("Promise3", start3, end3)
+		addPromiseStatus("Promise 3", start3, end3)
 	}, 3000)
 })
 
-let finalPromise = Promise.all([promise1, promise2, promise3]);
+let finalPromise = Promise.all([Promise 1, Promise 2, Promise 3]);
 
 finalPromise.then(() => {
 	// console.log(resolvedPromises);
