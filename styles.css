@@ -1,1 +1,9 @@
 /*  your css code here. If applicable */
+table {
+            border: 2px solid gray ;
+            width: 100% ;
+            border-collapse: collapse;
+}
+td, th {
+            border: 0.5px solid gray;
+}
